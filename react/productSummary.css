@@ -5,12 +5,6 @@
 .imageContainer {}
 .information {}
 .element {}
-.imageInline {
-  max-height: 7rem;
-}
-.imageNormal {
-  max-height: 281px
-}
 .buyButtonContainer {}
 .buyButton {}
 
@@ -38,4 +32,11 @@
 
 .priceContainer {
   height: 6.25rem;
+}
+
+.imageInline {
+  max-height: 7rem;
+}
+.imageNormal {
+  max-height: 17.56rem;
 }
