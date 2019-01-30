@@ -105,73 +105,6 @@ class ProductSummary extends Component {
     this.setState({ isHovering: true })
   }
 
-<<<<<<< HEAD
-=======
-  get commertialOffer() {
-    return path(['sku', 'seller', 'commertialOffer'], this.props.product)
-  }
-
-  renderImage() {
-    const { product, showBadge, badgeText, showCollections, displayMode } = this.props
-    const {
-      productClusters,
-      productName: name,
-      sku: {
-        image: { imageUrl },
-      },
-    } = product
-
-    const imageClassName = classNames({
-      [productSummary.imageNormal]: displayMode !== 'inline',
-      [productSummary.imageInline]: displayMode === 'inline'
-    })
-
-    let img = (
-      <Image className={imageClassName} description={name} src={imageUrl} />
-    )
-
-    if (showBadge) {
-      img = (
-        <DiscountBadge
-          listPrice={this.commertialOffer.ListPrice}
-          sellingPrice={this.commertialOffer.Price}
-          label={badgeText}
-        >
-          {img}
-        </DiscountBadge>
-      )
-    }
-
-    if (showCollections && productClusters && productClusters.length > 0) {
-      const collections = productClusters.map(cl => cl.name)
-
-      return (
-        <CollectionBadges collectionBadgesText={collections}>
-          {img}
-        </CollectionBadges>
-      )
-    }
-
-    return img
-  }
-
-  renderImageLoader() {
-    return (
-      <ContentLoader
-        style={{
-          width: '100%',
-          height: '100%',
-        }}
-        width={100}
-        height={56}
-        preserveAspectRatio="xMinYMin meet"
-      >
-        <rect width="100%" height="100%" />
-      </ContentLoader>
-    )
-  }
-
->>>>>>> Using tag img on Image component
   handleItemsStateUpdate = isLoading => this.setState({ isUpdatingItems: isLoading })
 
   render() {
@@ -222,7 +155,7 @@ class ProductSummary extends Component {
       'flex justify-between items-baseline': displayMode === 'inline',
     })
 
-    const imageProps = { product, showBadge, badgeText, showCollections }
+    const imageProps = { product, showBadge, badgeText, showCollections, displayMode }
     const nameProps = { product, displayMode, showFieldsProps }
 
     const priceProps = {
