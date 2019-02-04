@@ -2,6 +2,8 @@ import PropTypes from 'prop-types'
 import { CHOICE_TYPES } from './attachmentHelper'
 
 export const productShape = PropTypes.shape({
+  /** Product's id */
+  productId: PropTypes.string.isRequired,
   /** Product's link text */
   linkText: PropTypes.string.isRequired,
   /** Product's name */
