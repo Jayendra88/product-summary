@@ -1,5 +1,6 @@
 {
   "product-summary": {
-    "component": "index"
+    "component": "index",
+    "required": ["my-list"]
   }
 }
