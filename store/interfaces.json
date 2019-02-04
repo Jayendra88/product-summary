@@ -1,6 +1,6 @@
 {
   "product-summary": {
     "component": "index",
-    "required": ["my-list"]
+    "required": ["add-to-list-btn"]
   }
 }
