@@ -150,8 +150,6 @@ class ProductSummary extends Component {
     const ProductSummaryComponent =
       DISPLAY_MODE_MAP[displayMode] || ProductSummaryNormal
     return (
-      <Fragment>
-        <ExtensionPoint id="my-list" />
         <ProductSummaryComponent
           product={product}
           showBorders={showBorders}
@@ -165,7 +163,6 @@ class ProductSummary extends Component {
           priceProps={priceProps}
           buyButtonProps={buyButtonProps}
         />
-      </Fragment>
 
     )
   }
