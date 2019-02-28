@@ -1,7 +1,7 @@
 {
   "product-summary": {
     "component": "index",
-    "allwoed": ["wish-list"]
+    "allowed": ["wish-list"]
   },
   "wish-list": {
     "component": "*",
