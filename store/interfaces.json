@@ -1,6 +1,10 @@
 {
   "product-summary": {
     "component": "index",
-    "required": ["add-to-list-btn"]
+    "allwoed": ["wish-list"]
+  },
+  "wish-list": {
+    "component": "*",
+    "extensible": "vtex"
   }
 }
