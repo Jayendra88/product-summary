@@ -4,7 +4,6 @@
     "allowed": ["wish-list"]
   },
   "wish-list": {
-    "component": "*",
-    "extensible": "vtex"
+    "component": "*"
   }
 }
