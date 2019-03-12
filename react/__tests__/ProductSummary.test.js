@@ -9,6 +9,7 @@ describe('<ProductSummary /> component', () => {
       ...customProps,
       runtime: { hints: {} },
       product: {
+        productId: '12345',
         linkText: 'linkText',
         productName: 'productName',
         sku: {
