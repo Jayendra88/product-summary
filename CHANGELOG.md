@@ -6,6 +6,9 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Added
+- Add block to inject the `wish-list` plugin.
+- Add `showQuantitySelector` props to set the quantity selector visibility in the inline mode.
 
 ## [2.13.0] - 2019-03-13
 
