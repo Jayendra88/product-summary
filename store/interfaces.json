@@ -1,9 +1,9 @@
 {
   "product-summary": {
     "component": "index",
-    "allowed": ["wish-list"]
+    "allowed": ["add-to-list-btn"]
   },
-  "wish-list": {
+  "add-to-list-btn": {
     "component": "*"
   }
 }
