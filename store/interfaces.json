@@ -1,9 +1,5 @@
 {
   "product-summary": {
-    "component": "index",
-    "allowed": ["add-to-list-btn"]
-  },
-  "add-to-list-btn": {
-    "component": "*"
+    "component": "index"
   }
 }
